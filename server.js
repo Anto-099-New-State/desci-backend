@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Configure CORS to allow requests from your frontend domain
 const corsOptions = {
-  origin: ["http://localhost:3000", process.env.FRONTEND_URI || ""],
+  origin: ["https://desci-hack-sqdi.vercel.app", process.env.FRONTEND_URI || ""],
   methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
 };
 
